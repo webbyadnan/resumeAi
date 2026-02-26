@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "apps/api/src/main.ts",
+            "use": "@vercel/node",
+            "config": {
+                "includeFiles": [
+                    "apps/api/src/**"
+                ]
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "apps/api/src/main.ts"
+        }
+    ]
+}

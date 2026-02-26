@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #4F6EF7;
+  --primary-dark: #3B58E0;
+  --primary-light: #7B93FA;
+  --accent: #0EA5E9;
+  --background: #F8FAFF;
+  --surface: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #64748B;
+  --border: #E2E8F0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Glass morphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #4F6EF7 0%, #0EA5E9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Shimmer loading */
+.shimmer {
+  background: linear-gradient(90deg, #f0f4ff 25%, #e0e7ff 50%, #f0f4ff 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Card hover */
+.card-hover {
+  transition: all 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(79, 110, 247, 0.12);
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary-dark transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-primary/20;
+}
+
+.btn-secondary {
+  @apply bg-white text-primary font-semibold px-6 py-3 rounded-xl border border-primary/20 hover:bg-blue-50 transition-all duration-200;
+}
+
+.btn-ghost {
+  @apply text-slate-600 font-medium px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-primary transition-all duration-200;
+}
+
+/* Input styles */
+.input-field {
+  @apply w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200 text-sm;
+}
+
+/* Section padding */
+.section-padding {
+  @apply py-20 px-6;
+}
+
+/* Container */
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Announcement bar */
+.announcement-bar {
+  background: linear-gradient(90deg, #EFF6FF, #E0E7FF, #EFF6FF);
+  border-bottom: 1px solid #DBEAFE;
+}
+
+/* Resume preview scale */
+.resume-preview-wrapper {
+  transform-origin: top center;
+}
+
+/* Sticky preview */
+.sticky-preview {
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+/* Form steps progress */
+.progress-bar-fill {
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(90deg, #4F6EF7, #0EA5E9);
+}
+
+/* Tag/skill pill */
+.skill-tag {
+  @apply inline-flex items-center gap-1 px-3 py-1 bg-blue-50 text-primary text-sm font-medium rounded-full border border-blue-100;
+}
+
+/* AI badge */
+.ai-badge {
+  @apply inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-full;
+  background: linear-gradient(135deg, #EDE9FE, #DBEAFE);
+  color: #4F6EF7;
+  border: 1px solid rgba(79, 110, 247, 0.2);
+}
+
+/* Hero blob */
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.3;
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+
+  50% {
+    transform: translateY(-20px) scale(1.02);
+  }
+}
+
+/* Slide up animation used in modals */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Animate float */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Hero gradient backgrounds */
+.bg-hero-gradient {
+  background: linear-gradient(135deg, #F0F4FF 0%, #EFF6FF 40%, #F5F3FF 100%);
+}
+
+/* Card gradient */
+.bg-card-gradient {
+  background: linear-gradient(145deg, #FAFBFF 0%, #F5F8FF 100%);
+}
+
+/* Hide scrollbar but allow scroll */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Public resume page */
+.resume-preview {
+  min-height: 800px;
+}

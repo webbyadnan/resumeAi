@@ -1,0 +1,770 @@
+
+> api@0.0.1 start:dev
+> nest start --watch
+
+[2J[3J[H[[90m3:43:38 PM[0m] Starting compilation in watch mode...
+
+[[90m3:43:40 PM[0m] Found 0 errors. Watching for file changes.
+
+node:internal/modules/esm/resolve:999
+    throw error;
+    ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module 'D:\projects\CvMaker\apps\api\node_modules\pdfmake\src\PDFDocument' imported from D:\projects\CvMaker\apps\api\node_modules\pdfmake\src\printer.js
+    at finalizeResolution (node:internal/modules/esm/resolve:274:11)
+    at moduleResolve (node:internal/modules/esm/resolve:859:10)
+    at defaultResolve (node:internal/modules/esm/resolve:983:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:731:20)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:767:38)
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:790:52)
+    at #cachedResolveSync (node:internal/modules/esm/loader:750:25)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:459:50)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:395:34)
+    at ModuleLoader.importSyncForRequire (node:internal/modules/esm/loader:432:11) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file:///D:/projects/CvMaker/apps/api/node_modules/pdfmake/src/PDFDocument'
+}
+
+Node.js v22.20.0
+[2J[3J[H[[90m3:47:00 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m3:47:01 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +56ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumesController {/api/resumes}:[39m[38;5;3m +518ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/toggle-public, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAiController {/api/ai}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-summary, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-experience, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/suggest-skills, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/generate-cover-letter, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/ats-score, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/avatar, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExportController {/api/export}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/export/pdf/:resumeId, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyzeController {/api/analyze}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analyze/resume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicController {/api/public}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39212  - [39m02/25/2026, 3:47:03 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +5ms[39m
+🚀 API running on http://localhost:3001
+[2J[3J[H[[90m4:57:34 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m4:57:34 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:57:35 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m4:57:36 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:57:36 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m4:57:36 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[2J[3J[H[[90m4:57:38 PM[0m] File change detected. Starting incremental compilation...
+
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +80ms[39m
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19672  - [39m02/25/2026, 4:57:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +0ms[39m
+[[90m4:57:38 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:57:39 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m4:57:39 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:40 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +42ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumesController {/api/resumes}:[39m[38;5;3m +425ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, GET} route[39m[38;5;3m +5ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/toggle-public, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAiController {/api/ai}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-summary, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-experience, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/suggest-skills, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/generate-cover-letter, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/ats-score, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/avatar, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExportController {/api/export}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/export/pdf/:resumeId, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyzeController {/api/analyze}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analyze/resume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicController {/api/public}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/:slug, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3676  - [39m02/25/2026, 4:57:41 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +5ms[39m
+🚀 API running on http://localhost:3001
+[2J[3J[H[[90m5:12:17 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/resumes/resumes.service.ts[0m:[93m83[0m:[93m1[0m - [91merror[0m[90m TS1068: [0mUnexpected token. A constructor, method, accessor, or property was expected.
+
+[7m83[0m (id: string, userId: string) {
+[7m  [0m [91m~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m83[0m:[93m30[0m - [91merror[0m[90m TS1005: [0m'=>' expected.
+
+[7m83[0m (id: string, userId: string) {
+[7m  [0m [91m                             ~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m95[0m:[93m5[0m - [91merror[0m[90m TS1434: [0mUnexpected keyword or identifier.
+
+[7m95[0m     async update(id: string, userId: string, updates: any) {
+[7m  [0m [91m    ~~~~~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m95[0m:[93m20[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m95[0m     async update(id: string, userId: string, updates: any) {
+[7m  [0m [91m                   ~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m95[0m:[93m36[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m95[0m     async update(id: string, userId: string, updates: any) {
+[7m  [0m [91m                                   ~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m95[0m:[93m53[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m95[0m     async update(id: string, userId: string, updates: any) {
+[7m  [0m [91m                                                    ~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m95[0m:[93m60[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m95[0m     async update(id: string, userId: string, updates: any) {
+[7m  [0m [91m                                                           ~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m111[0m:[93m5[0m - [91merror[0m[90m TS1434: [0mUnexpected keyword or identifier.
+
+[7m111[0m     async remove(id: string, userId: string) {
+[7m   [0m [91m    ~~~~~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m111[0m:[93m20[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m111[0m     async remove(id: string, userId: string) {
+[7m   [0m [91m                   ~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m111[0m:[93m36[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m111[0m     async remove(id: string, userId: string) {
+[7m   [0m [91m                                   ~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m111[0m:[93m46[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m111[0m     async remove(id: string, userId: string) {
+[7m   [0m [91m                                             ~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m125[0m:[93m5[0m - [91merror[0m[90m TS1434: [0mUnexpected keyword or identifier.
+
+[7m125[0m     async togglePublic(id: string, userId: string) {
+[7m   [0m [91m    ~~~~~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m125[0m:[93m26[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m125[0m     async togglePublic(id: string, userId: string) {
+[7m   [0m [91m                         ~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m125[0m:[93m42[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m125[0m     async togglePublic(id: string, userId: string) {
+[7m   [0m [91m                                         ~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m125[0m:[93m52[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m125[0m     async togglePublic(id: string, userId: string) {
+[7m   [0m [91m                                                   ~[0m
+
+[96msrc/resumes/resumes.service.ts[0m:[93m148[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m148[0m }
+[7m   [0m [91m~[0m
+
+[[90m5:12:19 PM[0m] Found 16 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:12:42 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:12:42 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +42ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumesController {/api/resumes}:[39m[38;5;3m +289ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/toggle-public, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/duplicate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAiController {/api/ai}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-summary, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-experience, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/suggest-skills, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/generate-cover-letter, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/ats-score, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/avatar, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExportController {/api/export}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/export/pdf/:resumeId, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyzeController {/api/analyze}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analyze/resume, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicController {/api/public}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[31m[Nest] 19872  - [39m02/25/2026, 5:12:44 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +2ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\projects\CvMaker\apps\api\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\projects\CvMaker\apps\api\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\projects\CvMaker\apps\api\node_modules\@nestjs\core\nest-application.js:173:16)
+    at async bootstrap (D:\projects\CvMaker\apps\api\src\main.ts:20:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v22.20.0
+[2J[3J[H[[90m5:16:17 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:16:17 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +71ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumesController {/api/resumes}:[39m[38;5;3m +495ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/toggle-public, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/duplicate, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAiController {/api/ai}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-summary, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-experience, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/suggest-skills, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/generate-cover-letter, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/ats-score, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/avatar, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExportController {/api/export}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/export/pdf/:resumeId, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyzeController {/api/analyze}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analyze/resume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicController {/api/public}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/:slug, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25404  - [39m02/25/2026, 5:16:20 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
+🚀 API running on http://localhost:3001
+[AnalyzeService] Extracting — mimetype: application/pdf, size: 291652B
+[AnalyzeService] PDF extracted, length: 10909
+[AnalyzeService] Extracted text preview: âÅD»Ñ .µVðÏÕäíóû±Æ»»{wwïîî7½Ñà9o2à°ÉûwØdÜ¨m2~ì1¿$¦R-FÌÿcmÃ2É×êÃu!V8?ü4¶X%µ67?À
+Õ9ü1á
+Æ2FK£3år|ôw¥@[Åí[ðÃ¼B×  ,¿RÈ}bi'Àr³ Ûf+HÍj9È/9è@mãSÚs[Y¥×ZdkâN%úXP	
+[2J[3J[H[[90m5:26:39 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:26:40 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +54ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumesController {/api/resumes}:[39m[38;5;3m +379ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/toggle-public, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/duplicate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAiController {/api/ai}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-summary, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-experience, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/suggest-skills, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/generate-cover-letter, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/ats-score, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/avatar, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExportController {/api/export}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/export/pdf/:resumeId, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyzeController {/api/analyze}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analyze/resume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicController {/api/public}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[31m[Nest] 21372  - [39m02/25/2026, 5:26:42 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +2ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\projects\CvMaker\apps\api\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\projects\CvMaker\apps\api\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\projects\CvMaker\apps\api\node_modules\@nestjs\core\nest-application.js:173:16)
+    at async bootstrap (D:\projects\CvMaker\apps\api\src\main.ts:20:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v22.20.0
+[2J[3J[H[[90m5:46:42 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:46:42 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +40ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumesController {/api/resumes}:[39m[38;5;3m +349ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, GET} route[39m[38;5;3m +6ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/toggle-public, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/duplicate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAiController {/api/ai}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-summary, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-experience, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/suggest-skills, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/generate-cover-letter, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/ats-score, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/avatar, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExportController {/api/export}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/export/pdf/:resumeId, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyzeController {/api/analyze}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analyze/resume, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicController {/api/public}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41064  - [39m02/25/2026, 5:46:44 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +6ms[39m
+🚀 API running on http://localhost:3001
+[2J[3J[H[[90m5:49:01 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:49:01 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +51ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumesController {/api/resumes}:[39m[38;5;3m +316ms[39m
+[2J[3J[H[[90m5:49:03 PM[0m] File change detected. Starting incremental compilation...
+
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/toggle-public, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/duplicate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAiController {/api/ai}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-summary, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-experience, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/suggest-skills, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/generate-cover-letter, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/ats-score, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/avatar, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExportController {/api/export}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/export/pdf/:resumeId, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyzeController {/api/analyze}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analyze/resume, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicController {/api/public}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[31m[Nest] 9268  - [39m02/25/2026, 5:49:03 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +3ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\projects\CvMaker\apps\api\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\projects\CvMaker\apps\api\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\projects\CvMaker\apps\api\node_modules\@nestjs\core\nest-application.js:173:16)
+    at async bootstrap (D:\projects\CvMaker\apps\api\src\main.ts:20:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v22.20.0
+[[90m5:49:03 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +58ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumesController {/api/resumes}:[39m[38;5;3m +348ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/toggle-public, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/duplicate, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAiController {/api/ai}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-summary, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-experience, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/suggest-skills, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/generate-cover-letter, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/ats-score, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/section-tips, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/avatar, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExportController {/api/export}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/export/pdf/:resumeId, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyzeController {/api/analyze}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analyze/resume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicController {/api/public}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/:slug, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39060  - [39m02/25/2026, 5:49:05 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+🚀 API running on http://localhost:3001
+[2J[3J[H[[90m5:58:13 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:58:14 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:58:15 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:58:15 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:58:15 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:58:16 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +97ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:18 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumesController {/api/resumes}:[39m[38;5;3m +512ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, GET} route[39m[38;5;3m +5ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/toggle-public, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/duplicate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAiController {/api/ai}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-summary, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-experience, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/suggest-skills, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/generate-cover-letter, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/ats-score, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/section-tips, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/avatar, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExportController {/api/export}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/export/pdf/:resumeId, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyzeController {/api/analyze}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analyze/resume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicController {/api/public}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/:slug, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 42088  - [39m02/25/2026, 5:58:19 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +5ms[39m
+🚀 API running on http://localhost:3001
+[2J[3J[H[[90m5:58:30 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:58:31 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +59ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:32 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +0ms[39m
+[2J[3J[H[[90m5:58:32 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:58:33 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumesController {/api/resumes}:[39m[38;5;3m +490ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, PATCH} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/toggle-public, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/duplicate, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAiController {/api/ai}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-summary, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-experience, POST} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/suggest-skills, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/generate-cover-letter, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/ats-score, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/section-tips, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/avatar, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExportController {/api/export}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/export/pdf/:resumeId, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyzeController {/api/analyze}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analyze/resume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicController {/api/public}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
+[31m[Nest] 32256  - [39m02/25/2026, 5:58:33 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +5ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\projects\CvMaker\apps\api\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\projects\CvMaker\apps\api\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\projects\CvMaker\apps\api\node_modules\@nestjs\core\nest-application.js:173:16)
+    at async bootstrap (D:\projects\CvMaker\apps\api\src\main.ts:20:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v22.20.0
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:34 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +118ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +3ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumesController {/api/resumes}:[39m[38;5;3m +513ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/toggle-public, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/duplicate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAiController {/api/ai}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-summary, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-experience, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/suggest-skills, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/generate-cover-letter, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/ats-score, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/section-tips, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/avatar, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExportController {/api/export}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/export/pdf/:resumeId, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyzeController {/api/analyze}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analyze/resume, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicController {/api/public}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 41208  - [39m02/25/2026, 5:58:35 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+🚀 API running on http://localhost:3001
+[2J[3J[H[[90m5:58:57 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:58:57 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +68ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSupabaseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPublicModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAiModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mLinkedInModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyzeModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumesController {/api/resumes}:[39m[38;5;3m +543ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/toggle-public, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/resumes/:id/duplicate, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAiController {/api/ai}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-summary, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/enhance-experience, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/suggest-skills, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/generate-cover-letter, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/ats-score, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/ai/section-tips, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/avatar, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExportController {/api/export}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/export/pdf/:resumeId, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyzeController {/api/analyze}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analyze/resume, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicController {/api/public}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/:slug, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLinkedInController {/api/linkedin}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/linkedin/import, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+[31m[Nest] 30024  - [39m02/25/2026, 5:58:59 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +3ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\projects\CvMaker\apps\api\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\projects\CvMaker\apps\api\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\projects\CvMaker\apps\api\node_modules\@nestjs\core\nest-application.js:173:16)
+    at async bootstrap (D:\projects\CvMaker\apps\api\src\main.ts:20:5) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v22.20.0
