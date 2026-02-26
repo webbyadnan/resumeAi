@@ -2,7 +2,7 @@ import 'reflect-metadata';
 import { NestFactory } from '@nestjs/core';
 import { ExpressAdapter } from '@nestjs/platform-express';
 import { ValidationPipe } from '@nestjs/common';
-import { AppModule } from '../src/app.module';
+import { AppModule } from './app.module';
 import * as express from 'express';
 import { Request, Response } from 'express';
 
@@ -23,7 +23,7 @@ async function bootstrap() {
         app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
         app.enableCors({
-            origin: '*', // Temporarily wildcards to rule out CORS issues
+            origin: '*',
             credentials: true,
         });
 
