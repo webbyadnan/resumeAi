@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { NestFactory } from '@nestjs/core';
 import { ExpressAdapter } from '@nestjs/platform-express';
 import { ValidationPipe } from '@nestjs/common';
@@ -13,23 +14,28 @@ let isInitialized = false;
 async function bootstrap() {
     if (isInitialized) return app;
 
-    app = await NestFactory.create(AppModule, new ExpressAdapter(server), {
-        logger: ['error', 'warn'],
-    });
+    try {
+        app = await NestFactory.create(AppModule, new ExpressAdapter(server), {
+            logger: ['error', 'warn', 'log'],
+        });
 
-    app.use(express.json({ limit: '10mb' }));
-    app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+        app.use(express.json({ limit: '10mb' }));
+        app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
-    app.enableCors({
-        origin: process.env.FRONTEND_URL || 'http://localhost:3000',
-        credentials: true,
-    });
+        app.enableCors({
+            origin: '*', // Temporarily wildcards to rule out CORS issues
+            credentials: true,
+        });
 
-    app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
+        app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
 
-    await app.init();
-    isInitialized = true;
-    return app;
+        await app.init();
+        isInitialized = true;
+        return app;
+    } catch (err) {
+        console.error('FAILED TO BOOTSTRAP NESTJS:', err);
+        throw err;
+    }
 }
 
 export default async (req: Request, res: Response) => {
