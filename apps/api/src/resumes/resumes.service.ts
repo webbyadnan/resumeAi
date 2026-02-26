@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException, InternalServerErrorException } from '@nestjs/common';
 import { SupabaseService } from '../supabase/supabase.service';
-import { v4 as uuid } from 'uuid';
+import { randomUUID as uuid } from 'crypto';
 
 @Injectable()
 export class ResumesService {
