@@ -9,6 +9,7 @@ import { SupabaseModule } from './supabase/supabase.module';
 import { AuthModule } from './auth/auth.module';
 import { AnalyzeModule } from './analyze/analyze.module';
 import { LinkedInModule } from './linkedin/linkedin.module';
+import { AppController } from './app.controller';
 
 @Module({
     imports: [
@@ -23,5 +24,6 @@ import { LinkedInModule } from './linkedin/linkedin.module';
         PublicModule,
         LinkedInModule,
     ],
+    controllers: [AppController],
 })
 export class AppModule { }
